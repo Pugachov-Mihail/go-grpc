@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.31.0
 // 	protoc        v4.25.1
-// source: internal/proto/auth.proto
+// source: api/grpc/proto/auth.proto
 
 package Auth
 
@@ -32,7 +32,7 @@ type RegisterRequest struct {
 func (x *RegisterRequest) Reset() {
 	*x = RegisterRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[0]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -45,7 +45,7 @@ func (x *RegisterRequest) String() string {
 func (*RegisterRequest) ProtoMessage() {}
 
 func (x *RegisterRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[0]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *RegisterRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RegisterRequest.ProtoReflect.Descriptor instead.
 func (*RegisterRequest) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{0}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *RegisterRequest) GetEmail() string {
@@ -86,7 +86,7 @@ type RegisterResponse struct {
 func (x *RegisterResponse) Reset() {
 	*x = RegisterResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[1]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -99,7 +99,7 @@ func (x *RegisterResponse) String() string {
 func (*RegisterResponse) ProtoMessage() {}
 
 func (x *RegisterResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[1]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -112,7 +112,7 @@ func (x *RegisterResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RegisterResponse.ProtoReflect.Descriptor instead.
 func (*RegisterResponse) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{1}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *RegisterResponse) GetUserId() int64 {
@@ -135,7 +135,7 @@ type LoginRequest struct {
 func (x *LoginRequest) Reset() {
 	*x = LoginRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[2]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -148,7 +148,7 @@ func (x *LoginRequest) String() string {
 func (*LoginRequest) ProtoMessage() {}
 
 func (x *LoginRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[2]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -161,7 +161,7 @@ func (x *LoginRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoginRequest.ProtoReflect.Descriptor instead.
 func (*LoginRequest) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{2}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *LoginRequest) GetEmail() string {
@@ -196,7 +196,7 @@ type LoginResponse struct {
 func (x *LoginResponse) Reset() {
 	*x = LoginResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[3]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -209,7 +209,7 @@ func (x *LoginResponse) String() string {
 func (*LoginResponse) ProtoMessage() {}
 
 func (x *LoginResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[3]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -222,7 +222,7 @@ func (x *LoginResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LoginResponse.ProtoReflect.Descriptor instead.
 func (*LoginResponse) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{3}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *LoginResponse) GetToken() string {
@@ -243,7 +243,7 @@ type IsAdminRequest struct {
 func (x *IsAdminRequest) Reset() {
 	*x = IsAdminRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[4]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -256,7 +256,7 @@ func (x *IsAdminRequest) String() string {
 func (*IsAdminRequest) ProtoMessage() {}
 
 func (x *IsAdminRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[4]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -269,7 +269,7 @@ func (x *IsAdminRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IsAdminRequest.ProtoReflect.Descriptor instead.
 func (*IsAdminRequest) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{4}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *IsAdminRequest) GetUserId() int64 {
@@ -290,7 +290,7 @@ type IsAdminResponse struct {
 func (x *IsAdminResponse) Reset() {
 	*x = IsAdminResponse{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_internal_proto_auth_proto_msgTypes[5]
+		mi := &file_api_grpc_proto_auth_proto_msgTypes[5]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -303,7 +303,7 @@ func (x *IsAdminResponse) String() string {
 func (*IsAdminResponse) ProtoMessage() {}
 
 func (x *IsAdminResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_internal_proto_auth_proto_msgTypes[5]
+	mi := &file_api_grpc_proto_auth_proto_msgTypes[5]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -316,7 +316,7 @@ func (x *IsAdminResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use IsAdminResponse.ProtoReflect.Descriptor instead.
 func (*IsAdminResponse) Descriptor() ([]byte, []int) {
-	return file_internal_proto_auth_proto_rawDescGZIP(), []int{5}
+	return file_api_grpc_proto_auth_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *IsAdminResponse) GetIsAdmin() bool {
@@ -326,10 +326,10 @@ func (x *IsAdminResponse) GetIsAdmin() bool {
 	return false
 }
 
-var File_internal_proto_auth_proto protoreflect.FileDescriptor
+var File_api_grpc_proto_auth_proto protoreflect.FileDescriptor
 
-var file_internal_proto_auth_proto_rawDesc = []byte{
-	0x0a, 0x19, 0x69, 0x6e, 0x74, 0x65, 0x72, 0x6e, 0x61, 0x6c, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f,
+var file_api_grpc_proto_auth_proto_rawDesc = []byte{
+	0x0a, 0x19, 0x61, 0x70, 0x69, 0x2f, 0x67, 0x72, 0x70, 0x63, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f,
 	0x2f, 0x61, 0x75, 0x74, 0x68, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x06, 0x61, 0x75, 0x74,
 	0x68, 0x5f, 0x31, 0x22, 0x43, 0x0a, 0x0f, 0x52, 0x65, 0x67, 0x69, 0x73, 0x74, 0x65, 0x72, 0x52,
 	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x14, 0x0a, 0x05, 0x65, 0x6d, 0x61, 0x69, 0x6c, 0x18,
@@ -369,19 +369,19 @@ var file_internal_proto_auth_proto_rawDesc = []byte{
 }
 
 var (
-	file_internal_proto_auth_proto_rawDescOnce sync.Once
-	file_internal_proto_auth_proto_rawDescData = file_internal_proto_auth_proto_rawDesc
+	file_api_grpc_proto_auth_proto_rawDescOnce sync.Once
+	file_api_grpc_proto_auth_proto_rawDescData = file_api_grpc_proto_auth_proto_rawDesc
 )
 
-func file_internal_proto_auth_proto_rawDescGZIP() []byte {
-	file_internal_proto_auth_proto_rawDescOnce.Do(func() {
-		file_internal_proto_auth_proto_rawDescData = protoimpl.X.CompressGZIP(file_internal_proto_auth_proto_rawDescData)
+func file_api_grpc_proto_auth_proto_rawDescGZIP() []byte {
+	file_api_grpc_proto_auth_proto_rawDescOnce.Do(func() {
+		file_api_grpc_proto_auth_proto_rawDescData = protoimpl.X.CompressGZIP(file_api_grpc_proto_auth_proto_rawDescData)
 	})
-	return file_internal_proto_auth_proto_rawDescData
+	return file_api_grpc_proto_auth_proto_rawDescData
 }
 
-var file_internal_proto_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
-var file_internal_proto_auth_proto_goTypes = []interface{}{
+var file_api_grpc_proto_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_api_grpc_proto_auth_proto_goTypes = []interface{}{
 	(*RegisterRequest)(nil),  // 0: auth_1.RegisterRequest
 	(*RegisterResponse)(nil), // 1: auth_1.RegisterResponse
 	(*LoginRequest)(nil),     // 2: auth_1.LoginRequest
@@ -389,7 +389,7 @@ var file_internal_proto_auth_proto_goTypes = []interface{}{
 	(*IsAdminRequest)(nil),   // 4: auth_1.isAdminRequest
 	(*IsAdminResponse)(nil),  // 5: auth_1.isAdminResponse
 }
-var file_internal_proto_auth_proto_depIdxs = []int32{
+var file_api_grpc_proto_auth_proto_depIdxs = []int32{
 	0, // 0: auth_1.AuthApi.Reqister:input_type -> auth_1.RegisterRequest
 	2, // 1: auth_1.AuthApi.Login:input_type -> auth_1.LoginRequest
 	4, // 2: auth_1.AuthApi.IsAdmin:input_type -> auth_1.isAdminRequest
@@ -403,13 +403,13 @@ var file_internal_proto_auth_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_internal_proto_auth_proto_init() }
-func file_internal_proto_auth_proto_init() {
-	if File_internal_proto_auth_proto != nil {
+func init() { file_api_grpc_proto_auth_proto_init() }
+func file_api_grpc_proto_auth_proto_init() {
+	if File_api_grpc_proto_auth_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_internal_proto_auth_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RegisterRequest); i {
 			case 0:
 				return &v.state
@@ -421,7 +421,7 @@ func file_internal_proto_auth_proto_init() {
 				return nil
 			}
 		}
-		file_internal_proto_auth_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*RegisterResponse); i {
 			case 0:
 				return &v.state
@@ -433,7 +433,7 @@ func file_internal_proto_auth_proto_init() {
 				return nil
 			}
 		}
-		file_internal_proto_auth_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*LoginRequest); i {
 			case 0:
 				return &v.state
@@ -445,7 +445,7 @@ func file_internal_proto_auth_proto_init() {
 				return nil
 			}
 		}
-		file_internal_proto_auth_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*LoginResponse); i {
 			case 0:
 				return &v.state
@@ -457,7 +457,7 @@ func file_internal_proto_auth_proto_init() {
 				return nil
 			}
 		}
-		file_internal_proto_auth_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*IsAdminRequest); i {
 			case 0:
 				return &v.state
@@ -469,7 +469,7 @@ func file_internal_proto_auth_proto_init() {
 				return nil
 			}
 		}
-		file_internal_proto_auth_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_api_grpc_proto_auth_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*IsAdminResponse); i {
 			case 0:
 				return &v.state
@@ -486,18 +486,18 @@ func file_internal_proto_auth_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_internal_proto_auth_proto_rawDesc,
+			RawDescriptor: file_api_grpc_proto_auth_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   6,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_internal_proto_auth_proto_goTypes,
-		DependencyIndexes: file_internal_proto_auth_proto_depIdxs,
-		MessageInfos:      file_internal_proto_auth_proto_msgTypes,
+		GoTypes:           file_api_grpc_proto_auth_proto_goTypes,
+		DependencyIndexes: file_api_grpc_proto_auth_proto_depIdxs,
+		MessageInfos:      file_api_grpc_proto_auth_proto_msgTypes,
 	}.Build()
-	File_internal_proto_auth_proto = out.File
-	file_internal_proto_auth_proto_rawDesc = nil
-	file_internal_proto_auth_proto_goTypes = nil
-	file_internal_proto_auth_proto_depIdxs = nil
+	File_api_grpc_proto_auth_proto = out.File
+	file_api_grpc_proto_auth_proto_rawDesc = nil
+	file_api_grpc_proto_auth_proto_goTypes = nil
+	file_api_grpc_proto_auth_proto_depIdxs = nil
 }

@@ -2,8 +2,11 @@ package main
 
 import (
 	"log/slog"
+	"magicMc/api/internal/app"
 	"magicMc/api/internal/config"
 	"os"
+	"os/signal"
+	"syscall"
 )
 
 const (
@@ -18,7 +21,18 @@ func main() {
 
 	log.Info("Start app")
 
-	log.Error("}{yi")
+	application := app.New(log, cfg.GRPC.Port, cfg.StoragePath, cfg.TokenTTL)
+
+	go application.GRPC.Run()
+
+	stop := make(chan os.Signal, 1)
+	signal.Notify(stop, syscall.SIGTERM, syscall.SIGINT)
+
+	<-stop
+
+	application.GRPC.Stop()
+
+	log.Info("application stop")
 }
 
 func setupLoger(env string) *slog.Logger {
